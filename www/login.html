@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="cordova.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+    <script>
+       
+    </script>
+    <style>
+
+        img{
+            width: 400px;
+            height: 400px;
+        }
+
+        #voltar{
+            width: 35px;
+            height: 45px;
+            /*left: 35px;
+            top: 158px;*/
+            background: #D9D9D9;
+            border-radius: 3px;
+            margin-left: 10px;
+            margin-top: 0px;
+            background: #D9D9D9;
+            border-radius: 3px;
+        }
+
+        #seta{
+            width: 20px;
+            height: 20px;
+            margin-left: 7px;
+            margin-top: 13px;
+        }
+
+        #titulo{
+            width: 272px;
+            height: 29px;
+            margin-left: 10px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 120%;
+            letter-spacing: -0.02em;
+            color: #006A69;
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+
+        }
+
+        #sub{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            width: 272px;
+            height: 22px;
+            margin-left: 10px;
+            margin-top: -20px;
+            color: #3F4948;
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+        }
+
+        input{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px 16px;
+            width: 330px;
+            min-width: 240px;
+            height: 20px;
+            margin-left: 10px;
+            background: #FFFFFF;
+            border: 1px solid #D9D9D9;
+            border-radius: 8px;
+            flex: none;
+            order: 2;
+            align-self: stretch;
+            flex-grow: 0;
+        }
+
+         label{
+            margin-left: 10px;
+        }
+        #obri{
+            color: #006A69;
+        }
+
+        a{
+            width: 112px;
+            height: 27px;
+            margin-left: 10px;
+            top: 688px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            text-decoration-line: underline;
+            color: #006A69;
+        }
+
+        button{
+            width: 250px;
+            height: 35px;
+            border-radius: 5px;
+            background-color: #035958;
+            color: white;
+            border: none;
+            margin-left: 80px;
+            margin-top: 32px;
+        }
+
+        </style>
+</head>
+<body>
+    <img src="bemvC.png">
+    <a href="index.html">
+    <div id="voltar">
+         <img src="volta.png" id="seta">
+    </div></a>
+    <p id = "titulo">Bem-vindo de volta!</p>
+    <p id="sub">Que bom ver você de novo.</p>
+
+    <label>Nome de Usuário ou Email</label> <label id="obri">*</label> <br>
+    <input type="text"> <br>
+
+    <label>Senha</label><label id="obri">*</label><br>
+    <input type="password"> <br>
+    <a href="esenha.html">Esqueci senha</a> 
+    <a>
+    <button>Entrar</button>
+</a>
+</body>
+</html>
