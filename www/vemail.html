@@ -12,11 +12,6 @@
     </script>
     <style>
 
-        img{
-            width: 400px;
-            height: 300px;
-        }
-
         #voltar{
             width: 35px;
             height: 45px;
@@ -25,7 +20,7 @@
             background: #D9D9D9;
             border-radius: 3px;
             margin-left: 10px;
-            margin-top: 0px;
+            margin-top: 145px;
             background: #D9D9D9;
             border-radius: 3px;
         }
@@ -37,7 +32,7 @@
             margin-top: 13px;
         }
 
-        #titulo{
+          #titulo{
             width: 272px;
             height: 29px;
             margin-left: 10px;
@@ -60,7 +55,7 @@
             flex-direction: row;
             align-items: flex-start;
             padding: 0px;
-            width: 272px;
+            width: 350px;
             height: 22px;
             margin-left: 10px;
             margin-top: -20px;
@@ -69,57 +64,63 @@
             order: 1;
             align-self: stretch;
             flex-grow: 0;
-
         }
 
-        input{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 12px 16px;
-            width: 330px;
-            min-width: 240px;
-            height: 20px;
+        /*#parte{
+             position: absolute;
+             top: 200px;
+        }*/
+
+        label{
+            position: absolute;
+            top: 400px;
             margin-left: 10px;
-            background: #FFFFFF;
-            border: 1px solid #D9D9D9;
-            border-radius: 8px;
-            flex: none;
-            order: 2;
-            align-self: stretch;
-            flex-grow: 0;
-        }
-
-         label{
-            margin-left: 10px;
-        }
-        #obri{
             color: #006A69;
-        }
-
-        a{
-            width: 112px;
-            height: 27px;
-            margin-left: 10px;
-            top: 688px;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
-            line-height: 140%;
-            text-decoration-line: underline;
-            color: #006A69;
+            font-size: 20px;
+            line-height: 120%;
+
         }
 
-        button{
+        #codigo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px;
+            gap: 23px;
+            position: absolute;
+            width: 357px;
+            height: 50px;
+            margin-left: 10px;
+            top: 430px;
+        }
+
+        input{
+            margin: 0 auto;
+            width: 40px;
+            height: 39px;
+            background: #A2CEBC;
+            border-radius: 8px;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            border-color: #A2CEBC;
+
+        }
+
+        #botao{
+            position: absolute;
+            top: 600px;
             width: 250px;
             height: 35px;
-            border-radius: 5px;
+            border-radius: 9px;
             background-color: #035958;
             color: white;
             border: none;
-            margin-left: 80px;
-            margin-top: 32px;
+            margin-left: 76px;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 400;
@@ -130,22 +131,25 @@
         </style>
 </head>
 <body>
-    <img src="bemvC.png">
-    <a href="index.html">
+    <a href="cadastro.html">
     <div id="voltar">
-         <img src="volta.png" id="seta">
+        <img src="volta.png" id="seta">
     </div></a>
-    <p id = "titulo">Bem-vindo de volta!</p>
-    <p id="sub">Que bom ver você de novo.</p>
+    <div id="parte">
+        <p id="titulo">Verificação de Email</p>
+        <p id="sub">Para concluir seu cadastro digite o código de 5 digitos que enviamos para seu e-mail.</p>
+    </div>
 
-    <label>Nome de Usuário ou Email</label> <label id="obri">*</label> <br>
-    <input type="text"> <br>
+    <label id="cod">Código</label>
+    <div id="codigo">
+        <input type="text"> 
+        <input type="text"> 
+        <input type="text"> 
+        <input type="text"> 
+        <input type="text"> 
 
-    <label>Senha</label><label id="obri">*</label><br>
-    <input type="password"> <br>
-    <a href="esenha.html">Esqueci senha</a> 
-    <a>
-    <button>Entrar</button>
-</a>
+    </div>
+    <a href="login.html">
+    <button id="botao">Concluir Cadastro</button></a>
 </body>
 </html>
